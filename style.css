@@ -1,0 +1,621 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/* Navigation styling */
+header {
+    position: sticky;
+    top: 0px;
+    
+}
+
+header .nav {
+    background-color: #000000;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3)
+}
+
+header .nav h2 {
+    color: #00d9ff;
+
+}
+
+header .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav ul li {
+    display: inline;
+}
+
+header .nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Thumbnail section styling */
+.thumbnail-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #131313;
+}
+
+.container {
+    background-color: #94edff13;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 45%;
+
+}
+
+.container .thumbnail {
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+
+.container .text1 {
+    margin-top: 7px;
+    margin-bottom: 5px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffd000;
+}
+
+.container .text3 {
+    margin-top: -6px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.container .text2 {
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+/* Explore button styling */
+.explore-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    /* Gold color for the button */
+    color: #000000;
+    /* Black text color */
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+    /* Adding a shadow for a 3D effect */
+}
+
+.explore-button:hover {
+    background-color: #FFC107;
+    /* Slightly darker shade on hover */
+    color: #000000;
+    transform: translateY(-3px);
+    /* Adds a subtle lift effect on hover */
+}
+
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 84px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+/* Team section styling */
+/* Team section styling */
+.team-section {
+    padding: 40px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.team-container {
+    background-color: #94edff13;
+
+    display: flex;
+    justify-content: space-between;
+    /* Space between each member */
+    gap: 20px;
+    /* Space between each team member */
+    flex-wrap: nowrap;
+    /* Prevents wrapping to a new line */
+    overflow-x: auto;
+    /* Enables horizontal scrolling on smaller screens */
+}
+
+.team-member {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    /* Adjust this percentage as needed to fit more members in one row */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #FFD700;
+}
+
+.team-member h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #00E6FF;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+
+
+
+
+
+
+/* General styles remain the same */
+
+/* Media Query for Mobile Devices (max-width: 600px) */
+@media (max-width: 645px) {
+
+    /* Adjust the navigation menu to stack vertically */
+    header .nav ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        font-size: small;
+    }
+    header .nav h2 {
+        color: #00d9ff;
+        font-size: small;
+
+    
+    
+    }
+
+    /* Thumbnail section adjustments */
+    .thumbnail-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container {
+        
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Team section adjustments for mobile */
+    .team-container {
+        flex-direction: column;
+        /* Stack team members vertically on mobile */
+        align-items: center;
+        gap: 20px;
+        /* Add spacing between team members */
+        padding: 0;
+    }
+
+    .team-member {
+        width: 90%;
+        /* Take up more space on mobile for better readability */
+        margin-bottom: 20px;
+    }
+
+    .team-photo {
+        width: 50%;
+        /* Reduce the size of the images for better fit */
+    }
+
+    /* Footer adjustments for better mobile viewing */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Styling */
+.youtube-playlists {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #131313;
+    color: white;
+}
+
+.youtube-playlists h2 {
+    font-size: 32px;
+    color: #FFD700;
+    margin-bottom: 30px;
+}
+
+/* Playlist Container */
+.playlist-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Playlist */
+.playlist {
+    background-color: #222;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.playlist img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #FFD700;
+}
+
+.playlist-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.playlist-details h3 {
+    font-size: 20px;
+    color: #00E6FF;
+    margin-bottom: 10px;
+}
+
+.playlist-details p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.playlist-details a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.playlist-details a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 645px) {
+    .playlist-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .playlist {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Vocabulary Section */
+#vocabulary-section {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #111;
+    color: white;
+}
+
+#vocabulary-section h2 {
+    text-align: center;
+    color: #FFD700;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.video-slider {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+}
+
+.slider-container {
+    display: flex;
+    gap: 20px;
+}
+
+.video-item {
+    width: 240px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.video-title {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+.video-item:hover .video-thumbnail {
+    transform: scale(1.05);
+}
+
+/* Styling for horizontal scrollbar */
+.video-slider::-webkit-scrollbar {
+    height: 6px;
+}
+
+.video-slider::-webkit-scrollbar-thumb {
+    background-color: #FFD700;
+    border-radius: 10px;
+}
+
+.video-slider::-webkit-scrollbar-track {
+    background-color: #111;
+}
+
+
+
+
+/* Style for the video section */
+.latest-videos {
+    padding: 20px;
+    background-color: #111;
+}
+
+.latest-videos .section-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Style for the video container (slider) */
+.video-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+}
+
+.video-container .video {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust as needed */
+}
+
+.video-container .video img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.video-container .video .video-title {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Optional: Add scroll bar styling */
+.video-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.video-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.video-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.sticky-notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .sticky-note {
+    width: 200px;
+    height: 250px;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sticky-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    color: red;
+  }
+  
+  .sticky-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-top: 10px;
+  }
+  
+  .sticky-note p {
+    margin: 0;
+    color: #333;
+  }
+  
+  .add-note-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-note-btn:hover {
+    background-color: #1976D2;
+  }
+  
+
+
+
+/* Base styles for all sections */
+.section {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  
+  /* Section 1 styles */
+  .youtube-playlists {
+    background-color: #8052ff11;  /* Yellow */
+    color: #9c0000;
+  }
+  
+  .section-divider {
+    margin: 20px 0;
+  }
+  
+  /* Section 2 styles */
+  .latest-videos {
+    background-color: #bf7bff21;  /* Green */
+    color: #fff;
+
+
+  }
+  
+  /* Section Divider 1 */
+  .divider-1 {
+    border-top: 2px solid #ffffff; /* Orange line for Section 1 */
+    margin: 20px 0;
+  }
+  
+  /* Section 3 styles */
+  .section-3 {
+    background-color: #f4b403;  /* Blue */
+    color: #fff;
+  }
+  
+  /* Section Divider 2 */
+  .divider-2 {
+    border-top: 2px solid #ffffff;  /* Blue line for Section 2 */
+    margin: 20px 0;
+  }
+  
+
+
+
+
+
+
+
